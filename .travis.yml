@@ -1,5 +1,6 @@
 language: node_js
-before_install: -openssl aes-256-cbc -k "12345678" -in se234.pem.enc -out se234.pem -d
+before_install: 
+    -openssl aes-256-cbc -k "12345678" -in se234.pem.enc -out se234.pem -d
 install: true
 script: true
 after_success: 
